@@ -53,9 +53,66 @@ public class Implementor extends Thread{
             } 
         }); 
         
+     // Create consumer thread 
+        Thread t3 = new Thread(new Runnable() 
+        { 
+            @Override
+            public void run() 
+            { 
+                try
+                { 
+                	cstmt.executeQuery();
+                	System.out.print(System.currentTimeMillis());
+                } 
+                catch(SQLException  e) 
+                { 
+                    e.printStackTrace(); 
+                } 
+            } 
+        }); 
+        
+     // Create consumer thread 
+        Thread t4 = new Thread(new Runnable() 
+        { 
+            @Override
+            public void run() 
+            { 
+                try
+                { 
+                	cstmt.executeQuery();
+                	System.out.print(System.currentTimeMillis());
+                } 
+                catch(SQLException  e) 
+                { 
+                    e.printStackTrace(); 
+                } 
+            } 
+        }); 
+        
+     // Create consumer thread 
+        Thread t5 = new Thread(new Runnable() 
+        { 
+            @Override
+            public void run() 
+            { 
+                try
+                { 
+                	cstmt.executeQuery();
+                	System.out.print(System.currentTimeMillis());
+                } 
+                catch(SQLException  e) 
+                { 
+                    e.printStackTrace(); 
+                } 
+            } 
+        }); 
+        
+        
         t1.start();
         t2.start();
-		
+		t3.start();
+		t4.start();
+		t5.start();
 
 	}
 
