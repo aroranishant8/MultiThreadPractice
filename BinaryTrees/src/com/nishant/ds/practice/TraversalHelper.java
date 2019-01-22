@@ -37,15 +37,7 @@ public class TraversalHelper
 	
 	}
 	
-public static void inOrderTraversalUsingIteration(BinaryNode root) 
-	
-	{		
-	
 
-
-return;
-	
-	}
 
 public static void levelOrderTraversalUsingIteration(BinaryNode root) 
 
@@ -69,6 +61,31 @@ public static void levelOrderTraversalUsingIteration(BinaryNode root)
 
 }
 
+
+
+
+
+public static void levelOrderReverseTraversal(BinaryNode root) 
+
+{		
+	if(root==null)
+		return;
+
+	Queue<BinaryNode> q=new LinkedList<BinaryNode>();
+	q.add(root);
+	
+	while(!q.isEmpty())
+	{		
+		BinaryNode currnode=q.poll();
+		System.out.print(currnode.value+" ");
+		if(currnode.leftNode!=null)
+		q.add(currnode.leftNode);
+		if(currnode.rightNode!=null)
+		q.add(currnode.rightNode);
+		
+	}
+
+}
 
 	
 	

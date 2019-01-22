@@ -24,7 +24,7 @@ public class Implementor
 		System.out.println("\nPreorder Traversal using iteration: ");
 		TraversalHelper.preorderTraversalUsingIteration(root);
 		System.out.println("\nInorder Traversal using iteration: ");
-		TraversalHelper.inOrderTraversalUsingIteration(root);
+		TraversalHelper.levelOrderTraversalUsingIteration(root);
 		System.out.println("\nLevel order Traversal using iteration:");
 		TraversalHelper.levelOrderTraversalUsingIteration(root);
 		
